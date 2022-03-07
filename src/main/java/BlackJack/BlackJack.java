@@ -10,9 +10,9 @@ import java.util.ArrayList;
 public class BlackJack extends CardGame {
     public int maxScore = 21;
     private int ace_low = 1;
-    protected PlayerState state;
+    protected PlayerState state = new ReadyToPlayState();
     public ArrayList<PlayerState> listOfStates = new ArrayList<PlayerState>();
-    
+
     public BlackJack(){
         super(new Deck());
     }
@@ -52,7 +52,7 @@ public class BlackJack extends CardGame {
         BlackJackAction userAction;
         help();
         if (player.hasHand()) {
-            userOutput.outputHand(player.getHand());
+            userOutput.output(player.getHand().toString());
         }
         userChoice = userInput.getString();
         userAction = BlackJackAction.getAction(userChoice.substring(0,1).toUpperCase());
@@ -61,7 +61,6 @@ public class BlackJack extends CardGame {
     }
 
     protected void userPlays(Player player, Deck deck){
-        state = new ReadyToPlayState();
         state.setState(this, player, BlackJackAction.READY_TO_PLAY);
     }
 
@@ -84,11 +83,10 @@ public class BlackJack extends CardGame {
             }
         }
         if (winningPlayer != null) {
-            winningPlayer.setWinner(true);
+        	winningPlayer.setWinner(true);
         }
         return winningPlayer;
     }
-
 
     public int getScore(Hand hand){
         int score = 0;

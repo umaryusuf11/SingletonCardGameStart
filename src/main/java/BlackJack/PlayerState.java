@@ -4,6 +4,6 @@ import Player.Player;
 
 public interface PlayerState {
 
-    public void setState(BlackJack game, Player player, BlackJackAction action);
-    public BlackJackAction getState();
+    public abstract void setState(BlackJack game, Player player, BlackJackAction action);
+    public abstract BlackJackAction getState();
 }

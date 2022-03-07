@@ -2,21 +2,22 @@ package BlackJack;
 
 import Player.Player;
 
-public class TwistState {
-
-    public static TwistState uniqueInstance = null;
-    public static TwistState getInstance(){
-        if (uniqueInstance == null){
-            uniqueInstance =  new TwistState();
-        }
-        return uniqueInstance;
-    }
+public class TwistState implements PlayerState {
 
     public void setState(BlackJack game, Player player, BlackJackAction action) {
-        game.userOutput.output("Twist");
+        player.getHand().add(game.getDeck().playACard());
+        PlayerState state = this;
+        if (game.getScore(player.getHand()) > game.maxScore){
+            state = new EndState();
+        }
+        else {
+            state = new ReadyToPlayState();
+        }
+        game.setPlayerState(state, player, action);
     }
+
     public BlackJackAction getState(){
-        return null;
+        return BlackJackAction.TWIST;
     }
 
 }

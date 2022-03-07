@@ -1,10 +1,6 @@
 package Player;
 
-import BlackJack.BlackJackAction;
-import BlackJack.TwistState;
-import BlackJack.PlayerState;
 import CardGame.Hand;
-
 
 import java.util.Random;
 
@@ -28,7 +24,6 @@ public class Player {
         this.levelOfRisk = risk;
     }
 
-
     public void setWinner(Boolean status){
         this.winner = status;
     }
@@ -36,7 +31,6 @@ public class Player {
     public Boolean hasWon(){
         return winner;
     }
-
 
     public boolean hasHand(){
         return hand != null;
