@@ -22,29 +22,33 @@ Creating a new instance of each state is wasteful if you play the game more than
 ## Black Jack Assignment Instructions
 ### ``StickState``
 * A private constructor
-* A private static unique instance of type StickState
+* A private static unique instance of type ``StickState``
 * A public static getInstance to create the unique instance if null and return
+* Check your tests use the getInstance or any other states
 * Run tests for ``StickState`` - This verification step to double check everything works.
 
 ### ``TwistState``
 * Change into a singleton design pattern
 * A private constructor
-* A private static unique instance of type StickState
+* A private static unique instance of type ``TwistState``
 * A public static getInstance to create the unique instance if null and return
+* Check your tests use the getInstance or any other states
 * Amend any other states that create this state to use getInstance
 
 ### ``ReadyToPlayState``
 * Change into a singleton design pattern
 * A private constructor
-* A private static unique instance of type StickState
+* A private static unique instance of type ``ReadyToPlayState``
 * A public static getInstance to create the unique instance if null and return
+* Check your tests use the getInstance or any other states
 * Amend any other states that create this state to use getInstance
 
 ### ``EndState``
 * Change into a singleton design pattern
 * A private constructor
-* A private static unique instance of type StickState
+* A private static unique instance of type ``EndState``
 * A public static getInstance to create the unique instance if null and return
+* Check your tests use the getInstance or any other states
 * Amend any other states that create this state to use getInstance
 
 ### ``ReadyToPlayStateTest``
