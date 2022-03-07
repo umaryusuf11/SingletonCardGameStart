@@ -13,7 +13,7 @@ Creating a new instance of each state is wasteful if you play the game more than
     * [wiki](https://stgit.dcs.gla.ac.uk/DerekSomerville/javagetstarted/-/wikis/home/Pair-Programming) and
     * register on the [form](https://forms.office.com/Pages/ResponsePage.aspx?id=KVxybjp2UE-B8i4lTwEzyELpM2ZClsRNrJBn7A_b41VUQUowMU9CMVNTVUIwQ1lVTjVGSDk3SjRFRS4u)
 ## Preparation
-* Pre-reading - Chapter 5 pg171 - pg179 - The Singleton Design Pattern. 2009 Eric Freeman, Elisabeth Robson, Behttps://stgit.dcs.gla.ac.uk/oose-2021-22-teaching-team/singletonrockpaperscissorsrt Bates, and Kathy Sierra. "Head First Design Patterns“ ~ 20 minutes
+* Pre-reading - Chapter 5 pg171 - pg179 - The Singleton Design Pattern. 2009 Eric Freeman, Elisabeth Robson, Be Bates, and Kathy Sierra. "Head First Design Patterns“ ~ 20 minutes
 * Watch the Singleton Design Pattern Lecture
 * Review the example [https://stgit.dcs.gla.ac.uk/oose-2021-22-teaching-team/singletonexample](https://stgit.dcs.gla.ac.uk/oose-2021-22-teaching-team/singletonexample)
 * Review the example [https://stgit.dcs.gla.ac.uk/oose-2021-22-teaching-team/singletonrockpaperscissors](https://stgit.dcs.gla.ac.uk/oose-2021-22-teaching-team/singletonrockpaperscissors)
@@ -21,7 +21,7 @@ Creating a new instance of each state is wasteful if you play the game more than
 
 ## Black Jack Assignment Instructions
 ### ``StickState``
-git ad* A private constructor
+* A private constructor
 * A private static unique instance of type StickState
 * A public static getInstance to create the unique instance if null and return
 * Run tests for ``StickState`` - This verification step to double check everything works.
