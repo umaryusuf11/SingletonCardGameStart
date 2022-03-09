@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TwistStateTest {
-    private TwistState twistState = new TwistState();
+    private TwistState twistState = TwistState.getInstance();
     private BlackJack blackJack = new BlackJack();
     private OverrideInput overrideInput = new OverrideInput();
     

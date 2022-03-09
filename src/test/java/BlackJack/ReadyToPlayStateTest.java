@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ReadyToPlayStateTest {
 
-    private PlayerState readToPlayState = new ReadyToPlayState();
+    private PlayerState readToPlayState = ReadyToPlayState.getInstance();
     private BlackJack blackJack = new BlackJack();
     private OverrideInput overrideInput = new OverrideInput();
 

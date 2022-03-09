@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EndStateTest {
-    private EndState endState = new EndState();
+    private EndState endState = EndState.getInstance();
     private OverrideInput overrideInput = new OverrideInput();
     @Test
     void setState() {

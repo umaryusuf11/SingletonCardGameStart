@@ -7,7 +7,7 @@ import Player.PlayerType;
 import static org.junit.jupiter.api.Assertions.*;
 
 class StickStateTest {
-    private StickState stickState = new StickState();
+    private StickState stickState = StickState.getInstance();
     private BlackJack blackJack = new BlackJack();
     private OverrideInput overrideInput = new OverrideInput();
     

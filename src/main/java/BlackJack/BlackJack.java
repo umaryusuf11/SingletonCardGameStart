@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class BlackJack extends CardGame {
     public int maxScore = 21;
     private int ace_low = 1;
-    protected PlayerState state = new ReadyToPlayState();
+    protected PlayerState state = ReadyToPlayState.getInstance();
     public ArrayList<PlayerState> listOfStates = new ArrayList<PlayerState>();
 
     public BlackJack(){
